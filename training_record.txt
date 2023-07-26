@@ -1,3 +1,11 @@
+Training settings:
+100 epochs
+200 batch size
+1% validation split
+
+
+
+
 Model: "model"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #
