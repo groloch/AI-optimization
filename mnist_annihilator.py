@@ -31,7 +31,9 @@ def mnist_annihilator():
     x_train = tf.expand_dims(x_train, axis=-1)
     x_test = tf.expand_dims(x_test, axis=-1)
 
-    model.fit(x_train, y_train, epochs=30, batch_size=200, validation_split=0.01)
+    model.fit(x_train, y_train, epochs=100, batch_size=200, validation_split=0.01)
+
+    model.save("annihilator.h5")
 
 
 if __name__ == "__main__":
