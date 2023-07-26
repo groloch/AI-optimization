@@ -2,7 +2,7 @@
 
 # Overview
 
-This is a very-lightweight Convolutional Neural Network that achieves >99% training accuracy (~98% test accuracy) on the mnist dataset.
+This is a extremely-lightweight Convolutional Neural Network that achieves >99% training accuracy (~98% test accuracy) on the mnist dataset.
 This CNN has a extremely low amount of parameters (2114) and, thanks to parameter-count-reducing techniques, keeps a relatively high efficiency.
 
 # Parameter-count-reducing techniques 
