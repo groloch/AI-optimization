@@ -2,7 +2,7 @@
 
 # Overview
 
-This is a extremely-lightweight Convolutional Neural Network that achieves >99% training accuracy (~98% test accuracy) on the mnist dataset.
+This is a extremely-lightweight Convolutional Neural Network that achieves >99% training accuracy (~98% test accuracy) on the mnist dataset (handwritten digits recognition).
 This CNN has a extremely low amount of parameters (2114) and, thanks to parameter-count-reducing techniques, keeps a relatively high efficiency.
 
 # Parameter-count-reducing techniques 
@@ -14,6 +14,6 @@ This CNN has a extremely low amount of parameters (2114) and, thanks to paramete
 
 # How to use 
 
-Replace the training part in the <i>mnist_annihilator</i> function and load the model instead. Then feel free to test/benchmark/try to improve the model.
+Replace the training part in the <i>mnist_annihilator</i> function and load the model from the <i>annihilator.h5</i> file instead. Then feel free to test/benchmark/try to improve the model.
 
-Keep in mind that this project was initially not made for direct reuse, but to showcase different ways to reduce the parameters amount of a Convolutional Neural Network classifier.
+Keep in mind that this project was initially not made for direct reuse, but to showcase different ways to reduce the parameters amount of a Convolutional Neural Network-based classifier.
