@@ -16,4 +16,4 @@ This CNN has a extremely low amount of parameters (2114) and, thanks to paramete
 
 Replace the training part in the <i>mnist_annihilator</i> function and load the model instead. Then feel free to test/benchmark/try to improve the model.
 
-However, this initially was not made for direct reuse, but to showcase different ways to reduce the parameters amount of a Convolutional Neural Network classifier.
+Keep in mind that this project was initially not made for direct reuse, but to showcase different ways to reduce the parameters amount of a Convolutional Neural Network classifier.
