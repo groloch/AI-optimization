@@ -4,21 +4,21 @@ import tensorflow as tf
 def mnist_annihilator():
     input = tf.keras.layers.Input((28, 28, 1))
     x = tf.keras.layers.Conv2D(filters=32, kernel_size=(2, 2), dilation_rate=(2, 2), padding='same')(input)
-    x = tf.keras.layers.Activation('relu')(x)
+    x = tf.keras.layers.Activation('leaky_relu')(x)
     x = tf.keras.layers.MaxPooling2D(pool_size=(2, 2))(x)
 
-    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(3, 3), padding='same')(x)
-    x = tf.keras.layers.Activation('relu')(x)
+    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(2, 2), dilation_rate=(2, 2), padding='same')(x)
+    x = tf.keras.layers.Activation('leaky_relu')(x)
     x = tf.keras.layers.MaxPooling2D(pool_size=(2, 2))(x)
 
-    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(3, 3), padding='same')(x)
-    x = tf.keras.layers.Activation('relu')(x)
+    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(2, 2), dilation_rate=(2, 2), padding='same')(x)
+    x = tf.keras.layers.Activation('leaky_relu')(x)
     x = tf.keras.layers.MaxPooling2D(pool_size=(2, 2))(x)
 
-    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(3, 3), padding='same')(x)
-    x = tf.keras.layers.Activation('relu')(x)
+    x = tf.keras.layers.DepthwiseConv2D(kernel_size=(2, 2), dilation_rate=(2, 2), padding='same')(x)
+    x = tf.keras.layers.Activation('leaky_relu')(x)
     x = tf.keras.layers.Conv2D(filters=8, kernel_size=(1, 1), padding='same')(x)
-    x = tf.keras.layers.Activation('relu')(x)
+    x = tf.keras.layers.Activation('leaky_relu')(x)
 
     x = tf.keras.layers.Flatten()(x)
     x = tf.keras.layers.Dense(10)(x)
