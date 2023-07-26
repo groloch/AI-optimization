@@ -7,7 +7,7 @@ This CNN has a extremely low amount of parameters (2114) and, thanks to paramete
 
 # Parameter-count-reducing techniques 
 
-* Using Depthwise convolutional layers instead of traditional convolutional layers
-* Using Convolutional layers with dilation rates to lower the kernel size (and thus, the amount of parameters) while keeping the same receptive field.
+* Using Depthwise Convolutional layers instead of traditional convolutional layers
+* Using traditional Convolutional layers with dilation rates to lower the kernel size (and thus, the amount of parameters) while keeping the same receptive field.
 * Reducing the amount of filters right before the Flatten layer
 * Removing Batch Normalization layers
