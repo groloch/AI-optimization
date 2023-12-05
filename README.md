@@ -1,4 +1,6 @@
-## Mnist annihilator
+## AI Optimization
+
+This repository covers several techniques to optimize AI models. It is currently focusing only on reducing the parameters count of a model for hardware implementation.
 
 # Overview
 
