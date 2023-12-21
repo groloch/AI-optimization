@@ -1,21 +1,13 @@
-# AI Optimization
+# AI Optimization #
 
-This repository covers several techniques to optimize AI models. It is currently focusing only on reducing the parameters count of a model for hardware implementation.
+## Overview ## 
+The goal of this repository is to help AI developpers to design more efficient neural network models. The techniques in this repository are not suited for fine-tuning existing models, but rather for helping to create more efficient models from an chosen type of architecture.
+This repository is divided in several chapters, each focusing on one category of optimization. 
 
-## Overview
+* ## Parameters reduction ## 
 
-This is a extremely-lightweight Convolutional Neural Network that achieves >99% training accuracy (~98% test accuracy) on the mnist dataset (handwritten digits recognition).
-This CNN has a extremely low amount of parameters (2114) and, thanks to parameter-count-reducing techniques, keeps a relatively high efficiency.
+The goal of this repository is to optimize models that will be implemented in edge devices with limited memory (sensors, cameras, smartphones, ...). Therefore, it is of significant importance to reduce the number of parameters of such models. Seveveral parameters-count reducing techniques are displayed and benchmarked there.
 
-## Parameter-count-reducing techniques 
+* ## Inference acceleration ##
 
-* Using Depthwise Convolutional layers instead of traditional convolutional layers
-* Using traditional Convolutional layers with dilation rates to lower the kernel size (and thus, the amount of parameters) while keeping the same receptive field.
-* Reducing the amount of filters right before the Flatten layer
-* Removing Batch Normalization layers
-
-## How to use 
-
-Replace the training part in the <i>mnist_annihilator</i> function and load the model from the <i>annihilator.h5</i> file instead. Then feel free to test/benchmark/try to improve the model.
-
-Keep in mind that this project was initially not made for direct reuse, but to showcase different ways to reduce the parameters amount of a Convolutional Neural Network-based classifier.
+In this repository, I will focus on method to accelerate the inference speed of a model. A faster inference guarantees a faster, therefore cheaper, training, as well as a better experience for the final users of the model. Some methods in this repository may be similar to their counterpart in the parameters reduction chapter, but the benchmarks are different.
